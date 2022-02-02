@@ -1,0 +1,73 @@
+Created by testinium on 31.01.2022
+
+This is a concept file with following syntax for each concept.
+
+
+# Kategori sayfası açılır
+* id "com.ozdilek.ozdilekteyim:id/nav_categories" li elemente tıkla
+* "4" saniye kadar bekle
+
+# Kategori sayfasının açıldığını kontrol et
+* xpath "//android.widget.LinearLayout[@content-desc='Kategoriler']/android.widget.TextView" li elementi bul ve "Kategoriler" alanını kontrol et
+* "3" saniye kadar bekle
+
+
+# Menüden Kadın Seçeneğine tıklanır
+* xpath "//android.widget.TextView[@text='Kadın']" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Pantolon kategorisi açılır
+* xpath "//android.widget.TextView[@text='Pantolon']" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Sayfanın en aşağı kısmına doğru iki kez scroll edilir
+* Aşağı Kaydır
+* "3" saniye kadar bekle
+* Aşağı Kaydır
+* "3" saniye kadar bekle
+
+# Ürünlerden rastgele bir ürün seçilir
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" arasından rastgele bir tanesini seç ve tıkla
+* "3" saniye kadar bekle
+
+# Ürün detay sayfasının açıldığı kontrol edilir
+* xpath "//android.widget.TextView[@text='Beden Tablosu']" li elementi bul ve "Beden Tablosu" alanını kontrol et
+* "3" saniye kadar bekle
+
+
+# Favoriler butonuna tıklanır
+* Aşağı Kaydır
+* "1" saniye kadar bekle
+* xpath "//android.widget.TextView[@text='Listeme Ekle']" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Giriş yapma sayfasının açıldığı doğrulanır
+* id "com.ozdilek.ozdilekteyim:id/btnLogin" li elementi bul ve "Giriş Yap" alanını kontrol et
+* "3" saniye kadar bekle
+
+
+# Kullanıcı adı alanına text bilgisi girilir
+* id "com.ozdilek.ozdilekteyim:id/etEposta" li elementi bul ve "deneme@deneme.com" değerini yaz
+* "1" saniye kadar bekle
+
+# Password alanına şifre yazılır
+* id "com.ozdilek.ozdilekteyim:id/etPassword" li elementi bul ve "1q2w3e4r5t" değerini yaz
+* "2" saniye kadar bekle
+
+# Geri butonuna iki kere tıklanır
+* id "com.ozdilek.ozdilekteyim:id/ivBack" li elemente tıkla
+* "3" saniye kadar bekle
+* id "com.ozdilek.ozdilekteyim:id/ivBack" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Rastgele bir ürün seçilir
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" arasından rastgele bir tanesini seç ve tıkla
+* "3" saniye kadar bekle
+
+# Seçilen ürün sepete eklenir
+* Sayfayı sola kaydır
+* "2" saniye kadar bekle
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/tvInSizeItem']" arasından rastgele bir tanesini seç ve tıkla
+* "2" saniye kadar bekle
+* id "com.ozdilek.ozdilekteyim:id/cardAddToCart" li elemente tıkla
+* "3" saniye kadar bekle
